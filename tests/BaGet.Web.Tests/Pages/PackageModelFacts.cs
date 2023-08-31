@@ -334,7 +334,7 @@ namespace BaGet.Web.Tests
             }
         }
 
-        private Package CreatePackage(
+        private static Package CreatePackage(
             string version,
             long downloads = 0,
             bool hasReadme = false,
