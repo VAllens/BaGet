@@ -54,4 +54,6 @@ public class BaGetOptions
     public SearchOptions Search { get; set; }
 
     public MirrorOptions Mirror { get; set; }
+
+    public ProxyOptions Proxy { get; set; }
 }
