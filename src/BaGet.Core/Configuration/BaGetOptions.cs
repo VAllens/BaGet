@@ -1,3 +1,5 @@
+using BaGet.Core.Configuration;
+
 namespace BaGet.Core;
 
 public class BaGetOptions
