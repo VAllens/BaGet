@@ -18,7 +18,7 @@ public static class PackageArchiveReaderExtensions
             throw new InvalidOperationException("Package does not have a readme!");
         }
 
-        return await package.GetStreamAsync(readmePath, cancellationToken);
+        return await package.GetStreamAsync(PathUtility.StripLeadingDirectorySeparators(readmePath), cancellationToken);
     }
 
     public async static Task<Stream> GetIconAsync(this PackageArchiveReader package, CancellationToken cancellationToken)
