@@ -5,9 +5,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.10" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
+		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="10.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.1">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
@@ -28,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1" />
+		<PackageReference Update="Microsoft.SourceLink.GitHub" Version="8.0.0" />
 	</ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
@@ -12,7 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.NET.Build.Containers" Version="7.0.400" />
+		<PackageReference Include="Microsoft.NET.Build.Containers" Version="10.0.101" />
 	</ItemGroup>
 
 </Project>

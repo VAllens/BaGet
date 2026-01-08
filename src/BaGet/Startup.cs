@@ -36,7 +36,7 @@ public class Startup
         services.AddTransient(DependencyInjectionExtensions.GetServiceFromProviders<ISearchService>);
         services.AddTransient(DependencyInjectionExtensions.GetServiceFromProviders<ISearchIndexer>);
 
-        services.AddSingleton<IConfigureOptions<MvcRazorRuntimeCompilationOptions>, ConfigureRazorRuntimeCompilation>();
+        //services.AddSingleton<IConfigureOptions<MvcRazorRuntimeCompilationOptions>, ConfigureRazorRuntimeCompilation>();
 
         services.AddCors();
     }

@@ -57,7 +57,7 @@ public class ConfigureBaGetOptions : IConfigureOptions<CorsOptions>, IConfigureO
         options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
 
         // Do not restrict to local network/proxy
-        options.KnownNetworks.Clear();
+        options.KnownIPNetworks.Clear();
         options.KnownProxies.Clear();
     }
 

@@ -149,7 +149,7 @@ namespace BaGet.Core.Tests
                 var package = Assert.Single(result);
 
                 Assert.Equal("Foo", package.Id);
-                Assert.Equal(new[] { "Author1", "Author2"}, package.Authors);
+                Assert.Equal<string[]>(new[] { "Author1", "Author2"}, package.Authors);
                 Assert.Equal("Description", package.Description);
                 Assert.False(package.HasReadme);
                 Assert.False(package.HasEmbeddedIcon);
@@ -168,7 +168,7 @@ namespace BaGet.Core.Tests
                 Assert.Equal("", package.ProjectUrlString);
                 Assert.Equal("", package.RepositoryUrlString);
                 Assert.Null(package.RepositoryType);
-                Assert.Equal(new[] { "Tag1", "Tag2" }, package.Tags);
+                Assert.Equal<string[]>(new[] { "Tag1", "Tag2" }, package.Tags);
                 Assert.Equal("1.2.3-prerelease", package.NormalizedVersionString);
                 Assert.Equal("1.2.3-prerelease+semver2", package.OriginalVersionString);
             }
